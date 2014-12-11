@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-	<title>Mail to Self</title>
+	<title>Wealth+</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="Wealth+ makes it easy to track your net worth over time and help you save smarter."/>
@@ -19,6 +19,17 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/style.css" type="text/css" media="screen" charset="utf-8">
+	
+	<script>
+	function changeImage(element) {
+
+		 var right = "assets/images/screen.png";
+	     var left = "assets/images/screen2.png";
+	     element.src = element.bln ? right : left;
+	     element.bln = !element.bln;
+	 }
+	</script>
+	
 </head>
 <body>
 	<mwrap>
@@ -27,8 +38,7 @@
 		<p>Wealth+ makes it easy to track your net worth over time and help you save smarter.</p>
 		<a id="appstore" href="https://itunes.apple.com/app/id933534901"><img src="assets/images/appstore.svg"></a>
 		<visuals>
-			<img id="extension" src="assets/images/screen.png">
-<!-- 			<img id="inbox" src="assets/images/inbox.png"> -->
+			<img onclick="changeImage(this)" id="extension" class="changer" src="assets/images/screen.png">
 		</visuals>
 		<extratext>
 			<h2>Created by</h2>
@@ -41,5 +51,6 @@
 		</extratext>
 	<mwrap>
 </body>
+
 </html>
 
