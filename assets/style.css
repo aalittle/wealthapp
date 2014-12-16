@@ -30,13 +30,21 @@ table {
 /* CSS RESETTED */
 
 html {
-  font-size: 1.6rem;
-  border:none;
+  	font-size: 1.6rem;
+  	border:none;
 	background: url(../assets/images/bg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	height: 100%;
-	  overflow: hidden;
-	margin: 0;
+  
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+	background: url(../assets/images/) no-repeat center center fixed;
+	background-size: cover;
+	background-color:#032843;
+  }
 }
 
 body{
@@ -50,6 +58,7 @@ body{
 	height:100%;
 	  overflow: auto;
 }
+
 mwrap{
 	padding: 0 1rem;
 	display: block;
